@@ -47,6 +47,11 @@ button {
   border: white;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
 #load-more-movies-btn {
   display: flex;
   justify-content: center;
