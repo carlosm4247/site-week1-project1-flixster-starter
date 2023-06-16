@@ -1,13 +1,27 @@
+h1 {
+  text-align: center;
+}
 
+#load-more-movies-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.searchedMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 .movieList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .movie-container {
   text-align: center;
   margin-bottom: 30px;
   flex-basis: 25%;
-  }
+}

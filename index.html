@@ -11,15 +11,20 @@
     <h1>Flixter</h1>
 
     <form>
-        <input type="text" id="submitButton" placeholder="Search For Movies"></input>
-        <button type="submit">Submit</button>
+        <input type="text" id="searchInput" placeholder="Search For Movies"></input>
+        <button type="submit" id="submitButton">Submit</button>
+        <button type="submit" id="bringItBack">Home</button>
     </form>
 
-    <h2>Now Playing</h2>
+    <div class="currentMovies" id="currentMovies">
+        <h2>Now Playing</h2>
 
-    <div class="movieList"></div>
+        <div class="movieList"></div>
 
-    <button type="submit" id="load-more-movies-btn">Load More Movies</button>
+        <button type="submit" id="load-more-movies-btn">Load More Movies</button>
+    </div>
+
+    <div class="searchedMovies"></div>
 
     <script src="script.js"></script>
 
