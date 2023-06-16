@@ -8,14 +8,16 @@
     <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    <h1>Flixter</h1>
+    <h1>🍿 Flixter 🍿</h1>
 
-    <form>
-        <input type="text" id="searchInput" placeholder="Search For Movies"></input>
-        <button type="submit" id="submitButton">Submit</button>
-        <button type="submit" id="bringItBack">Home</button>
+    <form class="topbar">
+        <button type="submit" id="homeButton">Home</button>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search Movies"></input>
+            <button type="submit" id="submitButton">🔎</button>
+        </div>
     </form>
-
+    
     <div class="currentMovies" id="currentMovies">
         <h2>Now Playing</h2>
 
@@ -25,6 +27,8 @@
     </div>
 
     <div class="searchedMovies"></div>
+
+    
 
     <script src="script.js"></script>
 

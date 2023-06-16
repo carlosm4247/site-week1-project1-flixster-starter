@@ -3,7 +3,7 @@ console.log("Running");
 var submitButton = document.getElementById("submitButton");
 var loadMoreMoviesButton = document.getElementById("load-more-movies-btn");
 var searchInput = document.getElementById("searchInput");
-var homeButton = document.getElementById("bringItBack");
+var homeButton = document.getElementById("homeButton");
 
 var currentPage = 1;
 
@@ -32,12 +32,9 @@ async function displayMovies(url, movieCard) {
 
         movieCard.appendChild(container);
     });
-
-
 }
 
 function displayCurrentMovies() {
-
     const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=${currentPage}`;
     const movieList = document.querySelector('.movieList');
 
