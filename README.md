@@ -4,61 +4,64 @@
 
 Submitted by: Carlos Moreno Serrano
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: 15 hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site] https://carlosm4247.github.io/site-week1-project1-flixster-starter/
 
 ### Application Features
 
 #### Core Features
 
-- [ ] User can view a list of current movies from The Movie Database API as a grid view
+- [x] User can view a list of current movies from The Movie Database API as a grid view
   - The grid element should have an id of `movies-grid`
   - Each movie wrapper element should have a class of `movie-card`
-- [ ] For each movie displayed, user can see the following details:
+- [x] For each movie displayed, user can see the following details:
   - Title - the element should have a class of `movie-title`
   - Image - the `img` element should have a class of `movie-poster`
   - Votes - the element should have a class of `movie-votes`
-- [ ] User can load more current movies by clicking a button at the bottom of the list
+- [x] User can load more current movies by clicking a button at the bottom of the list
   - The button should have an id of `load-more-movies-btn`.
   - When clicked, the page should not refresh.
   - New movies should simply be added to the bottom
-- [ ] Allow users to search for movies and display them in a grid view
+- [x] Allow users to search for movies and display them in a grid view
   - There should be a search input element with an id of `search-input`
   - Users should be able to type into the input
   - When a user hits 'Enter', it should send a search request to the movies API
   - The results from the search should be displayed on the page
   - There should be a close icon with an id of `close-search-btn` that exits the search, clears results, and shows the current movies displayed previously
-- [ ] Website accounts for basic HTML/CSS accessibility features
-- [ ] Website should be responsive
+- [x] Website accounts for basic HTML/CSS accessibility features
+- [x] Website should be responsive
 
 #### Stretch Features
 
-- [ ] Deploy website using GitHub Pages.
-- [ ] Allow user to view more details about a movie within a popup.
+- [x] Deploy website using GitHub Pages.
+- [x] Allow user to view more details about a movie within a popup.
 - [ ] Improve the user experience through CSS & animation.
 - [ ] Allow movie video trailers to be played using [embedded YouTube](https://support.google.com/youtube/answer/171780?hl=en)
-- [ ] Implement anything else that you can get done to improve the app functionality!
+- [x] Implement anything else that you can get done to improve the app functionality!
+- [x] If the movie has no ratings, it'll show "No Rating Yet" under the movie instead of 0/10 ⭐️
 
 ### Walkthrough Video
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+<a href="https://www.loom.com/share/e9555dd956b946b7b7f600d838ff7106">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e9555dd956b946b7b7f600d838ff7106-with-play.gif">
+  </a>
 
 ### Reflection
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics discussed in the labs greatly prepared me to complete the assignment. Specifically, lab 1 taught me how to set up a github repository and connect it to my local repository using the terminal. We also discussed different types of containers in HTML and some CSS Styling options. Lab 3 was definitely the most helpful, because we learned different ways to write functions, how to set up buttons, listenerEvents, and getting information from an API. I'd say overall I felt very prepared for the project because of the topics we covered.
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+If I had more time, I would try to add the movie trailers in the popups instead of just the backdrop posters. I'd also probably try to make it so the user can search more than once without having to go home.
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+What probably went the best was just the pacing. I never felt stressed or rushed to get what I have done finished in time. I took my time with each requirement and there weren't too many bumps. What could be better is probably my css. I feel like I have too many classes and ids and there was a more efficient way to get tht done. There is one issue with the popups which is that if you open more than one at a time, it will sometimes have trouble closing them.
 
 ### Open-source libraries used
 
@@ -67,3 +70,5 @@ Add your response here
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+I was able to bounce off some ideas with Javier and Daisy while in the class which was helpful.
