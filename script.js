@@ -2,7 +2,7 @@ console.log("Running");
 
 var submitButton = document.getElementById("submitButton");
 var loadMoreMoviesButton = document.getElementById("load-more-movies-btn");
-var searchInput = document.getElementById("searchInput");
+var searchInput = document.getElementById("search-input");
 var homeButton = document.getElementById("homeButton");
 
 var currentPage = 1;
@@ -17,16 +17,20 @@ async function displayMovies(url, movieCard) {
   data.results.forEach((movie) => {
     const container = document.createElement("div");
     container.classList.add("movie-container");
+    container.id = "movie-card";
 
     const img = document.createElement("img");
+    img.id = "movie-poster";
     img.src = baseURL + "w342" + movie["poster_path"];
     container.appendChild(img);
 
     const title = document.createElement("div");
+    title.id = "movie-title";
     title.textContent = movie["title"];
     container.appendChild(title);
 
     const rating = document.createElement("div");
+    rating.id = "movie-votes";
     movie["vote_count"] > 0
       ? (rating.textContent = movie["vote_average"] + "/10 ⭐️")
       : (rating.textContent = "No Rating Yet");
@@ -43,6 +47,7 @@ async function displayMovies(url, movieCard) {
 function displayCurrentMovies() {
   const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=${currentPage}`;
   const movieList = document.querySelector(".movieList");
+  movieList.id = "movie-grid";
 
   displayMovies(url, movieList);
 
@@ -105,6 +110,7 @@ async function openPopup(movie) {
   popupContent.append(overview);
 
   const popupClose = document.createElement("button");
+  popupClose.id = "close-search-btn";
   popupClose.classList.add("popup-close");
   popupClose.textContent = "❌";
   popupClose.addEventListener("click", () => {
