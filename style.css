@@ -80,3 +80,34 @@ button {
   margin-bottom: 30px;
   flex-basis: 25%;
 }
+
+.popup-container {
+  position: fixed;
+  top: 5%;
+  left: 25%;
+  width: 55%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #445466;
+  border-radius: 5px;
+}
+
+.popup-content {
+  background-color: #445466;
+  padding: 10px;
+  text-align: start;
+  border-radius: 5px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+}
+
